@@ -97,7 +97,140 @@ body {
   background: #2a34b8;
 }
 
+* Preview Section */
+.preview {
+  background: #fff;
+  padding: 56px 0;
+}
+.preview-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+.preview-text {
+  flex: 1 1 320px;
+}
+.preview-text h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.preview-text p {
+  margin-bottom: 24px;
+  color: #555;
+}
+.preview-image {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+}
+.preview-image img.img-preview {
+  width: 340px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(61,79,255,0.12);
+}
 
+/* Stats Section */
+.stats {
+  background: #e7eaff;
+  padding: 48px 0;
+  text-align: center;
+}
+.stats-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.stats-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+.stat {
+  text-align: center;
+}
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3d4fff;
+}
+.stat-label {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #f7f8fc;
+  padding: 56px 0 32px 0;
+}
+.testimonials h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.testimonial-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(61,79,255,0.06);
+  padding: 32px 24px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.stars {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.stars .star {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.testimonial-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.testimonial-text {
+  color: #555;
+  margin-bottom: 16px;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.reviewer-img {
+  width: 36px;
+  height: 36px;
+  background: #e7eaff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviewer-info {
+  font-size: 0.95rem;
+}
+.reviewer-name {
+  font-weight: 600;
+}
+.reviewer-date {
+  color: #888;
+  font-size: 0.9rem;
+}
 /* Footer */
 .footer {
   background: #f7f8fc;

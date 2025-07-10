@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -23,6 +23,8 @@ body {
 .header {
   background: transparent;
   padding: 32px 0 0 0;
+  position: relative;
+  z-index: 1;
 }
 .header-content {
   display: flex;
@@ -32,11 +34,11 @@ body {
 .logo {
   font-weight: 700;
   font-size: 2rem;
-  color: #3d4fff;
+  color: #4e47ff;
   letter-spacing: 2px;
 }
 .btn-signup {
-  background: #3d4fff;
+  background: #4e47ff;
   color: #fff;
   padding: 12px 32px;
   border-radius: 8px;
@@ -55,6 +57,9 @@ body {
   padding: 64px 0 48px 0;
   position: relative;
   overflow: hidden;
+  height: 600px;
+  align-content: center;
+  margin-top: -84px;
 }
 .hero-bg {
   position: absolute;
@@ -77,12 +82,13 @@ body {
 }
 .hero h1 {
   font-size: 2.8rem;
+  line-height: 60px;
   font-weight: 700;
   margin-bottom: 32px;
   color: #181a20;
 }
 .btn-primary {
-  background: #3d4fff;
+  background: #4e47ff;
   color: #fff;
   padding: 14px 36px;
   border: none;
@@ -97,36 +103,38 @@ body {
   background: #2a34b8;
 }
 
-* Preview Section */ .preview {
-  background: #fff;
+/* Preview Section */
+.preview {
   padding: 56px 0;
 }
 .preview-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 68px 24px;
   gap: 48px;
 }
 .preview-text {
   flex: 1 1 320px;
 }
 .preview-text h2 {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
 .preview-text p {
   margin-bottom: 24px;
-  color: #555;
+  color: gray;
+  max-width: 330px;
 }
 .preview-image {
   flex: 1 1 320px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .preview-image img.img-preview {
-  width: 340px;
-  height: 200px;
+  width: 402px;
+  height: 328px;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(61, 79, 255, 0.12);
@@ -134,27 +142,34 @@ body {
 
 /* Stats Section */
 .stats {
-  background: #e7eaff;
-  padding: 48px 0;
+  padding: 0 24px;
   text-align: center;
 }
+.stats-content {
+  background: #e7eaff;
+  padding: 48px 24px;
+  border-radius: 24px;
+  max-width: 1092px;
+}
 .stats-content h3 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 32px;
 }
 .stats-numbers {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 64px;
+  padding: 0 36px;
 }
 .stat {
   text-align: center;
 }
 .stat-number {
-  font-size: 2.2rem;
+  font-size: 5.2rem;
+  line-height: 80px;
   font-weight: 700;
-  color: #3d4fff;
+  color: #4e47ff;
 }
 .stat-label {
   color: #555;
@@ -165,28 +180,27 @@ body {
 /* Testimonials Section */
 .testimonials {
   background: #f7f8fc;
-  padding: 56px 0 32px 0;
+  padding: 106px 0 106px 0;
 }
 .testimonials h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 32px;
 }
 .testimonial-cards {
   display: flex;
   gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .testimonial-card {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(61, 79, 255, 0.06);
   padding: 32px 24px;
-  width: 320px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #f2eded;
   align-items: flex-start;
 }
 .stars {
@@ -232,18 +246,22 @@ body {
 }
 /* Focus Section */
 .focus {
-  background: #fff;
-  padding: 56px 0;
   text-align: center;
 }
+.focus-content {
+  background: #fff;
+  padding: 56px 24px;
+  text-align: center;
+  border-radius: 24px;
+  max-width: 1092px;
+}
 .focus-content h3 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
 .focus-content p {
   color: #555;
-  margin-bottom: 24px;
 }
 .focus-image {
   display: flex;
@@ -251,8 +269,8 @@ body {
   margin-top: 32px;
 }
 .focus-image img.img-focus {
-  width: 420px;
-  height: 220px;
+  width: 840px;
+  height: 360px;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(61, 79, 255, 0.12);
@@ -261,20 +279,21 @@ body {
 /* Contact Section */
 .contact {
   background: #f7f8fc;
-  padding: 64px 0 32px 0;
+  padding: 104px 0 80px 0;
 }
 .contact-content {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 .contact-title {
   flex: 1 1 320px;
 }
 .contact-title h2 {
-  font-size: 2.2rem;
+  font-size: 70px;
+  line-height: 88px;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -283,10 +302,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  background: #fff;
-  padding: 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(61, 79, 255, 0.06);
 }
 .contact-form label {
   font-weight: 600;
@@ -313,20 +328,21 @@ body {
 
 /* Footer */
 .footer {
-  background: #f7f8fc;
-  padding: 48px 0 24px 0;
+  background: #fff;
+  padding: 104px 0 104px 0;
   text-align: center;
   border-top: 1px solid #e7eaff;
 }
 .footer-content .logo {
-  font-size: 2rem;
-  color: #3d4fff;
-  font-weight: 700;
+  font-size: 6rem;
+  color: #4e47ff;
+  font-weight: 900;
   margin-bottom: 12px;
 }
 .footer-content p {
   color: #555;
-  margin-bottom: 18px;
+  max-width: 531px;
+  margin: 0 auto 18px auto;
 }
 .footer-nav {
   display: flex;
@@ -334,14 +350,14 @@ body {
   gap: 32px;
 }
 .footer-nav a {
-  color: #181a20;
+  color: gray;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.2s;
 }
 .footer-nav a:hover {
-  color: #3d4fff;
+  color: #4e47ff;
 }
 
 /* Responsive Design */
@@ -374,4 +390,18 @@ body {
     height: 120px;
     font-size: 1rem;
   }
+}
+/* Button Styles */
+.btn-signup,
+.btn-primary {
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 214, 0, 0.08);
+  display: inline-block;
+}
+.btn-signup:hover,
+.btn-primary:hover {
+  background: #ffe066;
+  color: #181a20;
+  transform: scale(1.06);
+  box-shadow: 0 6px 24px rgba(255, 214, 0, 0.18);
 }
